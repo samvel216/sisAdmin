@@ -1,0 +1,120 @@
+.sectionServise {
+    padding: 30px 0px;
+
+}
+.servisecardTitle {
+    font-family: 'monospace', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+
+font-size: 25px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0.03em;
+text-align: center;
+
+}
+.servisecardText {
+    color: white;
+    text-align: center;  
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    font-family: 'Inconsolata', monospace;
+
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.03em;
+max-width: 400px;
+
+}
+.serviseCardButton {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(9, 255, 0);
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    transition-property: color, background;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.serviseCardButton:hover, .serviseCardButton:focus {
+    background-color: white;
+    color: black;
+  }
+.servisecardContainer {
+    margin-bottom: 50px;
+}
+.serviseCardImgContainer {
+    width: 100%;
+}
+.servisecardList {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 30px;
+   .item {
+    margin-bottom: 10px;
+   }
+    .link {
+        text-decoration: none;
+        color: white;
+        font-family: 'Inconsolata', monospace;
+    }
+}
+@media screen and (min-width: 768px) {
+    .serviseCardButton {
+        padding: 12px 25px;
+        margin-bottom: 40px;
+    }
+    .sectionServise { 
+        padding: 40px 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .sectionServise { 
+        padding: 60px 0px;
+    }
+.servisecardContainer {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.servisecardContainerReverse {
+    flex-direction: row-reverse;
+    margin-bottom: 0px;
+}
+.serviseCardImgContainer {
+    width: 700px;
+    height: 410px;
+}
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.servisecardTitleTextContainerRight {
+    margin-right: auto;
+}
+.servisecardTitleTextContainerLeft {
+    margin-left: auto;
+}
+.serviseCardButton {
+    margin-bottom: 0px;
+}
+
+}

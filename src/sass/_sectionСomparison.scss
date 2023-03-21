@@ -1,0 +1,255 @@
+.comparisonCardContainer {
+    background-color: white;
+}
+.comparisonMainTitle {
+    font-family: 'monospace', sans-serif;
+    font-size: 30px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0.03em;
+text-align: center;
+color: white;
+margin-bottom: 50px;
+}
+.sectionСomparison {
+    padding: 100px 0px;
+    background-position: 50% 50%;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url("../images/pngtree-speed-light-background-f.jpg");
+   
+}
+.comparasionCardText {
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgb(2, 5, 21);
+}
+.comparisonCardTitle {
+    font-family: 'monospace', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgb(2, 5, 21);
+
+}
+.comparisonCardContainer {
+    margin-bottom: 10px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgb(131, 145, 223);
+}
+.comparisonContainerReletive {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+.comparisonLine {
+    height: 80%;
+    width: 2px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.comparisonCardContainer1 {
+    position: absolute;
+    top: 9%;
+    right: 52%;
+    text-align: right;
+    background-color: rgb(2, 5, 21);
+}
+.comparisonCardContainer6 {
+    position: absolute;
+    top: 9%;
+    left: 52%;
+    text-align: left;
+}
+.comparisonCardContainer2 {
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    background-color: rgb(2, 5, 21);
+}
+.comparisonCardContainer7 {
+    position: absolute;
+    top: 25%;
+    right: 52%;
+    text-align: right;
+
+}
+.comparisonCardContainer3 {
+    position: absolute;
+    top: 45%;
+    right: 52%;
+    text-align: right;
+    background-color: rgb(2, 5, 21);
+}
+.comparisonCardContainer8 {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+ 
+}
+.comparisonCardContainer4 {
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    background-color: rgb(2, 5, 21);
+}
+.comparisonCardContainer9 {
+    position: absolute;
+    top: 70%;
+    right: 52%;
+    text-align: right;
+}
+.comparisonCardContainer5 {
+    position: absolute;
+    top: 85%;
+    right: 52%;
+    text-align: right;
+    background-color: rgb(2, 5, 21);
+}
+.comparisonCardContainer10 {
+    position: absolute;
+    top: 85%;
+    left: 52%;
+
+}
+.comparisonWhiteSircle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    position: absolute;
+}
+.comparisonSquare {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(131, 145, 223);
+    transform: rotate(45deg);
+    position: absolute;
+}
+.comparisonRedSircle {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.comparisonWhiteSircle1 {
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.comparisonSquare1 {
+    top: 14%;
+    right: 51.5%;
+    background-color: black;
+}
+.comparisonSquare6 {
+    top: 14%;
+    left: 51.5%;
+}
+.comparisonWhiteSircle2 {
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.comparisonSquare2 {
+    top: 32%;
+    left: 51.5%;
+    background-color: black;
+}
+.comparisonSquare7 {
+    top: 32%;
+    right: 51.5%;
+}
+.comparisonWhiteSircle3 {
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.comparisonSquare3 {
+    top: 53%;
+    right: 51.5%;
+    background-color: black;
+}
+.comparisonSquare8 {
+    top: 53%;
+    left: 51.5%;
+}
+.comparisonWhiteSircle4 {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.comparisonSquare4 {
+    top: 75%;
+    left: 51.5%;
+    background-color: black;
+}
+.comparisonSquare9 {
+    top: 75%;
+    right: 51.5%;
+}
+.comparisonWhiteSircle5 {
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.comparisonSquare5 {
+    top: 93%;
+    right: 51.5%;
+    background-color: black;
+}
+.comparisonSquare10 {
+    top: 93%;
+    left: 51.5%;
+}
+
+.comparisonCardTitleBad {
+    color: white;
+}
+.comparasionCardTextBad {
+    color: white;
+}
+@media screen and (max-width: 767px) {
+    .comparisonCardContainer {
+     display: block;
+     position: static;
+     text-align: center;
+     margin-bottom: 20px;
+     z-index: 9999;
+    }
+    .comparisonContainerReletive {
+        height: 1500px;
+    }
+    .comparisonSquare {
+        display: none;
+    }
+    .comparisonLine {
+        top: 8%;
+        z-index: -1;
+    }
+    .comparisonWhiteSircle {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .comparisonContainerReletive {
+       height: 1800px;
+    }
+
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,700&family=Inconsolata:wght@400;500&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+      <include src="./partials/header.html"></include> 
+      <div class="modalHeaderContainer">
+        <nav class="modalHeaderNavigation">
+          <ul class="modalHeaderNavigationList">
+            <li class="item">
+              <a class="link" href="/">Мои услуги</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Обо мне</a>
+            </li>
+            <li class="item">
+              <a class="link" href="/about">Контакты</a>
+            </li>
+          </ul>
+        </nav> 
+        <ul class="modalHeaderContactsList">
+          <li class="item">
+            <a class="link" href="">
+              <svg class="telephone-icon headerIcon">
+                <use href="./images/sprite.svg#icon-Vector-7"></use>
+              </svg>
+              +380991479619</a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg class="letter-icon headerIcon">
+                <use href="./images/sprite.svg#icon-envelope-hover"></use>
+              </svg>
+              donadsamvel@gmail.com</a>
+          </li>
+        </ul>
+        <button class="mobile-header-close-button">
+          <svg class="mobile-header-close-icon">
+            <use href="./images/sprite.svg#icon-circle-up"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+  
+    <main class="main">
+      <section class="sectionHero">
+        <div class="bg-container">
+        
+
+        </div>
+        <div class="container">
+          <include src="./partials/sectionHero.html"></include>
+        </div>
+        
+      </section>
+      <section class="sectionServise">
+        <div class="container">
+          <include src="./partials/sectionServise.html"></include>
+          
+        </div>
+     
+      </section>
+      <section class="sectionExperience">
+        <div class="container">
+      <!-- <p>Я занимаюсь системным администрированием уже больше 15 лет. Работал 
+        в нескольких компаниях. Однако последние 8 лет занимаюсь сборкой компьютеров
+        на дому и поддержкой серверов некоторых компаний. Мое любимое хобби это 
+        сборка компьютеров из мусора. Перегоревшие платы и просто уже непригодные
+        для эксплатации запчасти я привожу в товарный вид. 
+      </p> -->
+        </div>
+      </section>
+      <section class="sectionContact">
+        <!-- <img src="./images/business-man-talking-on-the-phone_23-2148336884.avif" alt=""> -->
+        <div class="container">
+           
+           <div class="contactContainer">
+            <a class="backLinkLocate" onclick="javascript:history.back(); return false;">
+            <svg class="backLinkLocateIcon">
+              <use href="./images/sprite.svg#icon-circle-left"></use>
+            </svg>
+            </a>
+            <!-- <button class="contactScrolBtn">Свяжитесь со мной</button>
+          <h2 class="contactMainTitle">Свяжитесь со мной</h2> -->
+            <!-- <p class="contactText">или <br> я свяжусь с вами</p> -->
+            <div class="contactFormContainer">
+              <form class="modal-form" id="form">
+                <label for="name" class="modal-form-label">
+                  Имя
+                  <input
+                    type="text"
+                    name="user-name"
+                    class="modal-form-input req"
+                    id="name"
+                    required
+                  />
+                  <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+                  </svg>
+                </label>
+      
+                <label for="tel" class="modal-form-label">
+                  Телефон
+                  <input
+                    type="tel"
+                    name="user-tel"
+                    class="modal-form-input req formTelephone"
+                    id="tel"
+                    required
+                  />
+                  <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+                </label>
+      
+                <label for="mail" class="modal-form-label">
+                  Почта
+                  <input
+                    type="email"
+                    name="user-mail"
+                    class="modal-form-input req formEmail"
+                    id="mail"
+                    required
+                  />
+                  <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+                </label>
+      
+                <label for="comment" class="modal-form-messange-lable"
+                  >Комментарий
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    class="modal-form-messange"
+                    placeholder="Введите текст"
+                    rows="10"
+                  ></textarea>
+                </label>
+      
+             
+                
+                <button type="submit" class="modal-form-button">Отправить</button>
+              </form>
+            </div>
+               
+           </div>
+        </div>
+        
+      </section>
+      <!-- <section class="sectionLearn">
+        <div class="container">
+      <h3 class="learnMainTitle">Стоимость обучения</h3>
+      <ul class="learnList">
+        <li class="item">
+          <div class="learnListItemContainer">
+           
+            <img class="learnImg" src="./images/DALL·E 2023-03-10 14.16.02 - Draw a person who is in charge of system administration.png" alt="">
+            <h4 class="learnListTitle">Первое занятие</h4>
+            <h5 class="learnListCostTitle">Стоимость:<span> Бесплатно!</span></h5>
+            
+            <p class="learnListText">На первом уроке вы узнаете и бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+               бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</p>
+          </div>
+        
+        </li>
+        <li class="item">
+          <div class="learnListItemContainer">
+          <img class="learnImg" src="./images/DALL·E 2023-03-10 14.16.09 - Draw a person who is in charge of system administration.png" alt="">
+          <h4 class="learnListTitle">От 2 до 10 занятия</h4>
+          <h5 class="learnListCostTitle">Стоимость:<span> 5$ в час</span></h5>
+          <p class="learnListText">Со 2 по 10 урок вы узнаете и бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+            бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</p>
+        </div>
+        </li>
+        <li class="item">
+          <div class="learnListItemContainer">
+          <img class="learnImg" src="./images/DALL·E 2023-03-10 14.16.22 - Draw a person who is in charge of system administration.png" alt="">
+          <h4 class="learnListTitle">От 10 до результата</h4>
+          <h5 class="learnListCostTitle">Стоимость:<span> 8$ в час</span></h5>
+          <p class="learnListText">С 10 урока вы узнаете и бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+            бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</p>
+        </div>
+        </li>
+      </ul>
+        </div>
+      </section> -->
+      <section class="sectionСomparison">
+        <div class="container">
+          <div class="comparisonContainerReletive">
+            <h2 class="comparisonMainTitle">Что обычно происходит при покупке курса</h2>
+              <div class="comparisonCardContainer comparisonCardContainer1">
+                <h3 class="comparisonCardTitle comparisonCardTitleBad">Вы оплачиваете услугу</h3>
+                <p class="comparasionCardText comparasionCardTextBad">Обычно цены варируются от 5000 до 50000 гривен</p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer6">
+                <h3 class="comparisonCardTitle">Вы оплачиваете услугу</h3>
+                <p class="comparasionCardText">Цена моих услуг 300 грн в час. </p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer2">
+                <h3 class="comparisonCardTitle comparisonCardTitleBad">Начало обучения</h3>
+                <p class="comparasionCardText comparasionCardTextBad">Приободренный мыслью о том что по оканчании курса у вас будет сертифекат и свое портфолио вы приступаете к учебе.
+                 
+                </p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer7">
+                <h3 class="comparisonCardTitle">Начало обучения</h3>
+                <p class="comparasionCardText">
+                 Мы начинаем с бесплатного вводного занятия где я расскажу чем занимается СисАдмин. На нем вы сможете решить интересна ли вам эта работа.
+                </p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer3">
+                <h3 class="comparisonCardTitle comparisonCardTitleBad">Поддержка курса</h3>
+                <p class="comparasionCardText comparasionCardTextBad">Ментор изза большого количества вопросов отвечает вам сутками. Почти весь материал вы осваиваете сами 
+                  (материал и так есть в интернете абсолютно бесплатно)</p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer8">
+                <h3 class="comparisonCardTitle">Поддержка курса</h3>
+                <p class="comparasionCardText">Я обьясняю вам тему и выдаю  домашние задания, литературу и видео. Когда все основные темы будут пройдены
+                  вы начнете делать себе настоящее портфолио. Оно будет гораздо сложнее учебных проектов.
+                </p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer4">
+                <h3 class="comparisonCardTitle comparisonCardTitleBad">Окончание курса</h3>
+                <p class="comparasionCardText comparasionCardTextBad">Вы получаете заветный сертифекат и портфолио</p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer9">
+                <h3 class="comparisonCardTitle">Окончание курса</h3>
+                <p class="comparasionCardText">Вы получаете заветные знания и портфолио</p>
+              </div>
+              <div class="comparisonCardContainer comparisonCardContainer5">
+                <h3 class="comparisonCardTitle comparisonCardTitleBad">Поиск работы</h3>
+                <p class="comparasionCardText comparasionCardTextBad">Оказывается что этот сертифекат в глазах работадателя просто бумажка, а ваше портфолио это просто учебные проекты</p>
+              </div>
+                 
+
+          
+            
+            
+           
+              <div class="comparisonCardContainer comparisonCardContainer10">
+                <h3 class="comparisonCardTitle">Поиск работы</h3>
+                <p class="comparasionCardText">С настоящим портфолио найти работу новичку будет сложно, но в отличие от учебного портфолио это будет возможно.</p>
+              </div>
+
+              <div class="comparisonLine">
+              </div>
+              <div class="comparisonWhiteSircle comparisonWhiteSircle1">
+                <div class="comparisonRedSircle"></div>
+              </div>
+              <div class="comparisonWhiteSircle comparisonWhiteSircle2">
+                <div class="comparisonRedSircle"></div>
+              </div>
+              <div class="comparisonWhiteSircle comparisonWhiteSircle3">
+                <div class="comparisonRedSircle"></div>
+              </div>
+              <div class="comparisonWhiteSircle comparisonWhiteSircle4">
+                <div class="comparisonRedSircle"></div>
+              </div>
+              <div class="comparisonWhiteSircle comparisonWhiteSircle5">
+                <div class="comparisonRedSircle"></div>
+              </div>
+              <div class="comparisonSquare comparisonSquare1">
+
+              </div>
+              <div class="comparisonSquare comparisonSquare2">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare3">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare4">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare5">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare6">
+
+              </div>
+              <div class="comparisonSquare comparisonSquare7">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare8">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare9">
+      
+              </div>
+              <div class="comparisonSquare comparisonSquare10">
+      
+              </div>
+          </div>
+   
+        </div>
+      </section>
+          </main>
+       <footer class="footer">
+   
+        <div class="container">
+      <div class="footerContainer">
+<ul class="footerContactList">
+  <li class="item">
+    <a href="" class="link">+380991479619</a>
+  </li>
+  <li class="item">
+    <a href="" class="link">donadsamvel@gmail.com</a>
+  </li>
+</ul>
+<ul class="footerContactIconList">
+  <li class="item">
+    <a href="" class="link">
+      <svg class="icon telegramIcon">
+        <use href="./images/sprite.svg#icon-telegram-1"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="item">
+    <a href="" class="link">
+      <svg class="icon instaIcon">
+        <use href="./images/sprite.svg#icon-instagram-2"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="item">
+    <a href="" class="link">
+      <svg class="icon youTubeIcon">
+        <use href="./images/sprite.svg#icon-play"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+      </div>
+        </div>
+       </footer>
+  </body>
+</html>

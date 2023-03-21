@@ -1,0 +1,207 @@
+.sectionContact {
+
+    background-color: #ffffff;
+    display: none;
+    position: relative;
+}
+.backLinkLocate {
+  position: absolute;
+  width: 3px;
+  top: 0;
+  left: 15px;
+  height: 100%;
+  background-color: rgb(9, 255, 0);
+}
+.backLinkLocateIcon {
+  background-color: #ffffff;
+  width: 35px;
+  height: 35px;
+ position: absolute;
+ bottom: 50%;
+ left: -15px;
+ fill: rgb(9, 255, 0);
+ transform: translateY(50%);
+}
+.contactScrolBtn {
+  font-family: 'monospace', sans-serif;
+   padding: 5px 25px;
+    color: rgba(255, 255, 255, 0.938);
+    text-align: center;
+    font-style: italic;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    border-radius: 16px;
+    background-color: var(--nav-color);
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+textarea {
+  resize: none;
+}
+.modal {
+  padding: 40px 40px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+
+}
+.modal-form-messange-lable {
+  color: var(--no-primary-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 100%;
+}
+.modal-form-label {
+  position: relative;
+  color: var(--no-primary-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contactContainer {
+ max-width: 700px;
+ margin: 0 auto;
+z-index: 9999;
+
+padding: 30px;
+
+}
+.contactImgContainer {
+
+}
+/*Стили modal-form-input*/
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+
+  &:focus {
+    outline: none;
+    border-color: var(--nav-color);
+  }
+  &:focus + .modal-icon {
+    fill: var(--nav-color);
+  }
+}
+/*Стили modal-form-messange*/
+.modal-form-messange {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-top: 4px;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #757575 50%;
+  }
+}
+/*Стили modal-form-lable-policy*/
+.modal-form-lable-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 17px;
+    height: 16px;
+    border: 1px solid var(--primary-color);
+    margin-right: 10px;
+  }
+
+//   &:checked + &::before {
+//     background-image: url(../images/icon♀heck.svg);
+//     border: 0.2px solid #ffffff;
+//   }
+}
+/*Стили modal-form-button*/
+.modal-form-button {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--nav-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  transition: background 250ms linear;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+  }
+}
+.modal-form-check-link {
+  color: var(--nav-color);
+}
+.modal-form-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+ .error {
+  border: 1px solid rgba(255, 0, 0, 0.932);
+}
+.contactText {
+  text-align: center;
+  line-height: 30px;
+}
+@media screen and (min-width: 768px) { 
+
+
+}

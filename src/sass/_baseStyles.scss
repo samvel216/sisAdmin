@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #212121;
+    --no-primary-color: #757575;
+    --nav-color: #2196f3;
+    --white: #ffffff;
+    --background: #2f303a;
+    --white-tel-em: rgba(255, 255, 255, 0.6);
+    --border-color: #ececec;
+    --items-color: #eeeeee;
+    --green-color: rgb(5, 255, 5);
+    --hover-color: red;
+  }
+ 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+
+  }
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .header-nav {
+      display: none;
+    }
+    .header-nav-contacts {
+      display: none;
+    }
+  }
+  body {
+    background-color: #000000;
+  }
